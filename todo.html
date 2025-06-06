@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Reading Planner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<header><h1>📚 Bookbuddy😃 </h1></header>
+<body class="todo-page">
+  <main>
+    <h1 id="greeting">📖 Welcome to your Book Planner!</h1>
+    <p class="intro">Start adding your reading goals, notes, or book-related tasks below:</p>
+ 
+    <section class="recommended-section">
+  <h2>📚 Highly recommend to read this top Publications and Reading Resources 📚 </h2>
+  <div class="recommended-grid">
+    <div class="recommend-card">
+      <img src="images/6.jpg" alt="Book 1">
+      <h5>📘 The Alchemist</h5>
+      <p> (Book)</p>
+    </div>
+    <div class="recommend-card">
+      <img src="images/image2.jpg" alt="Article 1">
+       <h5>AI in Education</h5>
+        <p> (Article)</p>
+    </div>
+    <div class="recommend-card">
+      <img src="images/image1.jpg" alt="Magazine 1">
+       <h5>National Geographic</h5>
+<p> (Article)</p>
+    </div>
+    <div class="recommend-card">
+      <img src="images/5.jpg" alt="Book 2">
+      <h5>📘 Ikigai</h5>
+      <p> (Book)</p>
+    </div>
+    <div class="recommend-card">
+      <img src="images/4.jpg" alt="Book 3">
+       <h5>📘 India that is Bharat</h5>
+      <p>(Book)</p>
+    </div>
+        <div class="recommend-card">
+      <img src="images/6th.jpg" alt="Newspaper">
+       <h5>The Times of india  </h5>
+       <p> (Newspaper)</p>
+    </div>
+  </div>
+</section>
+
+  <div class="container">
+    <div class="box">
+      <h2>📖My current Reading Schedule !! </h2>
+      <label> Currently iam reading ?!!</label>
+      <input type="text" id="bookName" />
+      <label>Start Date</label>
+      <input type="date" id="startDate" />
+      <label>End Date</label>
+      <input type="date" id="endDate" />
+      <label>Return to Library?</label>
+      <input type="checkbox" id="returnCheck" />
+      <div id="returnDateContainer" style="display:none">
+        <label>Return Date</label>
+        <input type="date" id="returnDate" />
+      </div>
+      <label>Current Page</label>
+      <input type="text" id="currentPage" />
+      <button onclick="addReadingTask()">Add</button>
+      <div id="notification" class="notification">✅ Task added to Combined Summary!</div>
+    </div>
+    <div class="box">
+      <h2>📄 Daily Newspaper Reading Planner!</h2>
+      <label>Paper Name</label>
+      <input type="text" id="paperName" />
+      <label>Reading Date</label>
+      <input type="date" id="paperDate" />
+      <label>Let's fix the time !!</label>
+      <input type="time" id="paperTime" />
+      <button onclick="addPaperTask()">Add</button>
+   <div id="notification" class="notification">✅ Task added to Combined Summary!</div>
+    </div>
+  <div class="box">
+  <h2>📖 My  reading  wishlist</h2>
+      <label> Name</label>
+      <input type="text" id="upcomingBook" />
+      <label>Thinking to start from??</label>
+      <input type="date" id="releaseDate" />
+      <label>How should I buy this ?</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" value="Online Purchase" /> Online Purchase</label>
+        <label><input type="checkbox" value="Bookstore" /> Bookstore</label>
+        <label><input type="checkbox" value="Second-hand" /> Second-hand</label>
+        <label><input type="checkbox" value="Audio Book" /> Audio Book</label>
+        <label><input type="checkbox" value="Library" /> Library</label>
+        <label><input type="checkbox" value="Pre-order" /> Pre-order</label>
+      </div>
+      <button onclick="addUpcomingTask()">Add</button>
+      <div id="notification" class="notification">✅ Task added to Combined Summary!</div>
+    </div>
+
+    <div class="box combined">
+      <h2>✨ Combined Summary</h2>
+      <img src="images/33.png" alt="Book ">
+      <div class="summary" id="summary"></div>
+    </div>
+  </div>
+     
+      <h2 class="i">✨Thankyou for being the part of Bookbuddy😃 </h2>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

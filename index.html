@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Planner Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="form-page">
+<header><h1>📚 Bookbuddy😃 </h1></header>
+  <main class="containers">
+    <h1> Your Personal Reading Command Center! 🚀</h1>
+    <p class="intro">
+      <br>Tired of losing track of your literary adventures? Book Buddy is your ultimate digital companion, designed to transform your reading life into an organized, exciting journey.
+      <br>Book Buddy: Submit, Track, and Transform Your Reading!
+      </br></br>To unlock your personalized experience, simply click the below button to our quick form.<br>
+    </p>
+    <button id="openAboutBtn">Discover Book Buddy's Magic !</button>
+
+    <div id="aboutModal" class="modal">
+      <div class="modal-content">
+        <div class="main-layout hidden" id="formSection">
+          <div class="form-box">
+            <form id="bookForm">
+                <h2>Fill the form 😃</h2>
+              <label for="name">Your Name</label>
+              <input type="text" id="name" required />
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+              <label>What you like to read most?</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" /> Newspapers</label>
+                <label><input type="checkbox" /> Magazines</label>
+                <label><input type="checkbox" /> Books</label>
+                <label><input type="checkbox" /> Blogs</label>
+                <label><input type="checkbox" /> Articles</label>
+              </div>
+              <label>Reading Preferences</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" /> Fiction</label>
+                <label><input type="checkbox" /> Non-fiction</label>
+                <label><input type="checkbox" /> Fantasy</label>
+                <label><input type="checkbox" /> Motivational</label>
+              </div>
+              <label for="book">Favorite Books or any Articles</label>
+              <input type="text" id="book" required />
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="illustration">
+            <img src="images/reading.png" alt="reading nook" />
+          </div>
+        </div>
+        <span class="close-button" id="closeAboutBtn">&times;</span>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
